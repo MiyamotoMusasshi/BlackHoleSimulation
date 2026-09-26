@@ -1,10 +1,11 @@
-#pragma
+#pragma once
 #include <cmath>
 
-double G = 6.6743 * pow(10, -11);
+double G = 1;
 struct Object
 {
     double mass;
+    double size;
 
     double x;
     double y;

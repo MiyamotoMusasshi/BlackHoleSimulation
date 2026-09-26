@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/venator/projects/cpp/simulation/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

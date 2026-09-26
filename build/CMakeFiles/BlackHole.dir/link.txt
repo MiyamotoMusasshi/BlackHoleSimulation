@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/BlackHole.dir/link.d CMakeFiles/BlackHole.dir/src/main.cpp.o -o BlackHole  /usr/lib/libsfml-graphics.so.3.1.0 /usr/lib/libsfml-window.so.3.1.0 /usr/lib/libsfml-system.so.3.1.0
