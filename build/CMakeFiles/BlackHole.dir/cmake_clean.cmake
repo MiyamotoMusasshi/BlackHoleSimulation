@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "BlackHole.pdb"
   "CMakeFiles/BlackHole.dir/src/main.cpp.o"
   "CMakeFiles/BlackHole.dir/src/main.cpp.o.d"
+  "CMakeFiles/BlackHole.dir/src/utils.cpp.o"
+  "CMakeFiles/BlackHole.dir/src/utils.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

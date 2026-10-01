@@ -3,6 +3,7 @@ BlackHole: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   CMakeFiles/BlackHole.dir/src/main.cpp.o \
+  CMakeFiles/BlackHole.dir/src/utils.cpp.o \
   /usr/lib/libsfml-graphics.so.3.1.0 \
   /usr/lib/libsfml-window.so.3.1.0 \
   /usr/lib/libsfml-system.so.3.1.0 \
@@ -81,6 +82,8 @@ BlackHole: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
 CMakeFiles/BlackHole.dir/src/main.cpp.o:
+
+CMakeFiles/BlackHole.dir/src/utils.cpp.o:
 
 /usr/lib/libsfml-graphics.so.3.1.0:
 

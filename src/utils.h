@@ -1,7 +1,9 @@
 #pragma once
 #include <cmath>
 
-double G = 1;
+extern unsigned int windowWidth;
+extern unsigned int windowHeight;
+
 struct Object
 {
     double mass;
@@ -12,4 +14,16 @@ struct Object
 
     double velocityX;
     double velocityY;
+
+    double accelerationX;
+    double accelerationY;
 };
+struct accelerationsOfObjects
+{
+    double accelerationXFor1Object;
+    double accelerationYFor1Object;
+    double accelerationXFor2Object;
+    double accelerationYFor2Object;
+};
+
+accelerationsOfObjects calculationOfAccelerations(Object object1, Object object2);

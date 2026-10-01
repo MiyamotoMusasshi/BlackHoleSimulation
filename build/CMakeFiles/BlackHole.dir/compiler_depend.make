@@ -58,7 +58,8 @@ BlackHole: /usr/lib/Scrt1.o \
   /usr/lib32/libudev.so.1 \
   /usr/lib32/libxcb.so.1 \
   /usr/lib32/libz.so.1 \
-  CMakeFiles/BlackHole.dir/src/main.cpp.o
+  CMakeFiles/BlackHole.dir/src/main.cpp.o \
+  CMakeFiles/BlackHole.dir/src/utils.cpp.o
 
 CMakeFiles/BlackHole.dir/src/main.cpp.o: /home/venator/projects/cpp/simulation/src/main.cpp \
   /home/venator/projects/cpp/simulation/src/utils.h \
@@ -444,6 +445,111 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o: /home/venator/projects/cpp/simulation/s
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h
 
+CMakeFiles/BlackHole.dir/src/utils.cpp.o: /home/venator/projects/cpp/simulation/src/utils.cpp \
+  /home/venator/projects/cpp/simulation/src/utils.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/16/backward/binders.h \
+  /usr/include/c++/16/bit \
+  /usr/include/c++/16/bits/concept_check.h \
+  /usr/include/c++/16/bits/cpp_type_traits.h \
+  /usr/include/c++/16/bits/exception_defines.h \
+  /usr/include/c++/16/bits/move.h \
+  /usr/include/c++/16/bits/predefined_ops.h \
+  /usr/include/c++/16/bits/ptr_traits.h \
+  /usr/include/c++/16/bits/requires_hosted.h \
+  /usr/include/c++/16/bits/specfun.h \
+  /usr/include/c++/16/bits/std_abs.h \
+  /usr/include/c++/16/bits/stdexcept_throw.h \
+  /usr/include/c++/16/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16/bits/stl_algobase.h \
+  /usr/include/c++/16/bits/stl_function.h \
+  /usr/include/c++/16/bits/stl_iterator.h \
+  /usr/include/c++/16/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/16/bits/stl_iterator_base_types.h \
+  /usr/include/c++/16/bits/stl_pair.h \
+  /usr/include/c++/16/bits/utility.h \
+  /usr/include/c++/16/bits/version.h \
+  /usr/include/c++/16/cmath \
+  /usr/include/c++/16/concepts \
+  /usr/include/c++/16/debug/assertions.h \
+  /usr/include/c++/16/debug/debug.h \
+  /usr/include/c++/16/ext/numeric_traits.h \
+  /usr/include/c++/16/ext/type_traits.h \
+  /usr/include/c++/16/limits \
+  /usr/include/c++/16/pstl/pstl_config.h \
+  /usr/include/c++/16/tr1/bessel_function.tcc \
+  /usr/include/c++/16/tr1/beta_function.tcc \
+  /usr/include/c++/16/tr1/ell_integral.tcc \
+  /usr/include/c++/16/tr1/exp_integral.tcc \
+  /usr/include/c++/16/tr1/gamma.tcc \
+  /usr/include/c++/16/tr1/hypergeometric.tcc \
+  /usr/include/c++/16/tr1/legendre_function.tcc \
+  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/16/tr1/poly_hermite.tcc \
+  /usr/include/c++/16/tr1/poly_laguerre.tcc \
+  /usr/include/c++/16/tr1/riemann_zeta.tcc \
+  /usr/include/c++/16/tr1/special_function_util.h \
+  /usr/include/c++/16/type_traits \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
+
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h:
 
@@ -661,6 +767,8 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o: /home/venator/projects/cpp/simulation/s
 
 /usr/include/c++/16/bits/hash_bytes.h:
 
+/usr/include/c++/16/bits/functional_hash.h:
+
 /usr/lib/libm.so.6:
 
 /usr/lib/libXfixes.so.3:
@@ -863,8 +971,6 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o: /home/venator/projects/cpp/simulation/s
 
 /usr/lib/libgcc_s.so.1:
 
-/usr/include/SFML/Window/Export.hpp:
-
 /usr/include/SFML/Graphics/Color.inl:
 
 /usr/include/SFML/Graphics/VertexBuffer.hpp:
@@ -886,6 +992,20 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o: /home/venator/projects/cpp/simulation/s
 /usr/include/SFML/System/Clock.hpp:
 
 /usr/include/asm/types.h:
+
+/usr/include/libintl.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/SFML/System/String.hpp:
+
+/usr/include/c++/16/bits/codecvt.h:
+
+/home/venator/projects/cpp/simulation/src/main.cpp:
+
+/usr/lib/libudev.so.1:
+
+/usr/lib32/libz.so.1:
 
 /usr/include/c++/16/bits/ostream.h:
 
@@ -937,17 +1057,11 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o: /home/venator/projects/cpp/simulation/s
 
 /usr/include/SFML/Window/WindowBase.hpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/c++/16/bits/atomic_base.h:
-
 /usr/include/c++/16/variant:
 
 /usr/lib/libglib-2.0.so.0:
+
+CMakeFiles/BlackHole.dir/src/utils.cpp.o:
 
 /usr/lib32/libpng16.so.16:
 
@@ -1057,19 +1171,15 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o: /home/venator/projects/cpp/simulation/s
 
 /usr/include/bits/types/timer_t.h:
 
-/usr/include/libintl.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h:
 
-/usr/include/bits/endianness.h:
+/usr/include/asm/errno.h:
 
-/usr/include/SFML/System/String.hpp:
+/usr/include/bits/stdint-uintn.h:
 
-/usr/include/c++/16/bits/codecvt.h:
+/usr/include/c++/16/bits/atomic_base.h:
 
-/usr/lib/libudev.so.1:
-
-/usr/lib32/libz.so.1:
-
-/home/venator/projects/cpp/simulation/src/main.cpp:
+/usr/include/SFML/Window/Export.hpp:
 
 /usr/include/c++/16/bits/cxxabi_init_exception.h:
 
@@ -1265,6 +1375,8 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o:
 
 /usr/include/bits/wctype-wchar.h:
 
+/home/venator/projects/cpp/simulation/src/utils.cpp:
+
 /usr/include/c++/16/backward/auto_ptr.h:
 
 /usr/include/c++/16/bit:
@@ -1324,5 +1436,3 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o:
 /usr/include/c++/16/bits/fs_path.h:
 
 /usr/include/c++/16/bits/functexcept.h:
-
-/usr/include/c++/16/bits/functional_hash.h:
