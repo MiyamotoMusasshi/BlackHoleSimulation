@@ -1,13 +1,23 @@
 #include <iostream>
 #include "utils.h"
 #include <SFML/Graphics.hpp>
+#include "vector"
+#include <random>
 
-Object blackHole = {10000.0, 50.0, (double)windowWidth / 2, (double)windowHeight / 2, 0.0, 0.0, 0.0, 0.0};
-Object planet1 = {1.0, 10.0, (double)windowWidth / 2 + 50.0, (double)windowHeight / 2 - 50.0, 10.0, 10.0, 0.0, 0.0};
 double dt = 0.1;
+std::vector<Object> objects = {{"BlackHole", 1, sf::Color::Black, 10000.0, 50.0, (double)windowWidth / 2, (double)windowHeight / 2, 0.0, 0.0, 0.0, 0.0}, {"RandomPlanet", 0, sf::Color::Black, 1.0, 10.0, (double)windowWidth / 2 + 50.0, (double)windowHeight / 2 - 50.0, 10.0, 10.0, 0.0, 0.0}};
 
 int main()
 {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> distrib(0, 255);
+
+    for (size_t i = 0; i < objects.size(); i++)
+    {
+        sf::Color randomColor(distrib(gen), distrib(gen), distrib(gen));
+        objects[i].color = randomColor;
+    }
 
     sf::RenderWindow window(
         sf::VideoMode({windowWidth, windowHeight}),
@@ -17,31 +27,8 @@ int main()
 
     while (window.isOpen())
     {
-        accelerationsOfObjects newAccelerationsOfObjects = calculationOfAccelerations(blackHole, planet1);
-        planet1.accelerationX = newAccelerationsOfObjects.accelerationXFor2Object;
-        planet1.accelerationY = newAccelerationsOfObjects.accelerationYFor2Object;
-        blackHole.accelerationX = newAccelerationsOfObjects.accelerationXFor1Object;
-        blackHole.accelerationY = newAccelerationsOfObjects.accelerationYFor1Object;
 
-        planet1.velocityX += planet1.accelerationX * dt;
-        planet1.velocityY += planet1.accelerationY * dt;
-
-        planet1.x += planet1.velocityX * dt;
-        planet1.y += planet1.velocityY * dt;
-
-        blackHole.velocityX += blackHole.accelerationX * dt;
-        blackHole.velocityY += blackHole.accelerationY * dt;
-
-        blackHole.x += blackHole.velocityX * dt;
-        blackHole.y += blackHole.velocityY * dt;
-
-        sf::CircleShape planet1Render((float)planet1.size);
-        planet1Render.setFillColor(sf::Color::Green);
-        planet1Render.setPosition({sf::Vector2<float>(planet1.x, planet1.y)});
-
-        sf::CircleShape blackHoleRender((float)blackHole.size);
-        blackHoleRender.setFillColor(sf::Color::Black);
-        blackHoleRender.setPosition({sf::Vector2<float>(blackHole.x, blackHole.y)});
+        calculationObjectsPosition(objects, dt);
 
         while (const std::optional event = window.pollEvent())
         {
@@ -49,11 +36,22 @@ int main()
                 window.close();
         }
 
-        window.clear(sf::Color::White);
+        window.clear();
 
-        window.draw(planet1Render);
-        window.draw(blackHoleRender);
-
+        for (size_t i = 0; i < objects.size(); i++)
+        {
+            sf::CircleShape objectRender((float)objects[i].size);
+            objectRender.setFillColor(objects[i].color);
+            // objectRender.setOrigin({{sf::Vector2<float>(objects[i].x, objects[i].y)}});
+            objectRender.setPosition({sf::Vector2<float>(objects[i].x, objects[i].y)});
+            if (objects[i].isBlackHole == 1)
+            {
+                objectRender.setFillColor(sf::Color::Black);
+                objectRender.setOutlineThickness(5.f);
+                objectRender.setOutlineColor(sf::Color::White);
+            }
+            window.draw(objectRender);
+        }
         window.display();
     }
 

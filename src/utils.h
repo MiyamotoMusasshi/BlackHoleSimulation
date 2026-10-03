@@ -1,11 +1,18 @@
 #pragma once
 #include <cmath>
+#include <iostream>
+#include <vector>
+#include <SFML/Graphics.hpp>
 
 extern unsigned int windowWidth;
 extern unsigned int windowHeight;
 
 struct Object
 {
+    std::string name;
+    bool isBlackHole;
+    sf::Color color;
+
     double mass;
     double size;
 
@@ -26,4 +33,6 @@ struct accelerationsOfObjects
     double accelerationYFor2Object;
 };
 
-accelerationsOfObjects calculationOfAccelerations(Object object1, Object object2);
+accelerationsOfObjects calculationOfAccelerations(const Object &object1, const Object &object2);
+
+void calculationObjectsPosition(std::vector<Object> &objects, double tick);

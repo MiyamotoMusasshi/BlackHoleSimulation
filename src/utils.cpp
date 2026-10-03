@@ -4,7 +4,7 @@
 unsigned int windowWidth = 1920;
 unsigned int windowHeight = 1080;
 
-accelerationsOfObjects calculationOfAccelerations(Object object1, Object object2)
+accelerationsOfObjects calculationOfAccelerations(const Object &object1, const Object &object2)
 {
 
     double deltaX = object2.x - object1.x;
@@ -26,3 +26,33 @@ accelerationsOfObjects calculationOfAccelerations(Object object1, Object object2
 
     return result;
 };
+
+void calculationObjectsPosition(std::vector<Object> &objects, double tick)
+{
+    for (auto &o : objects)
+    {
+        o.accelerationX = 0.0;
+        o.accelerationY = 0.0;
+    }
+
+    for (size_t i = 0; i < objects.size(); i++)
+    {
+        for (size_t j = i + 1; j < objects.size(); j++)
+        {
+            accelerationsOfObjects newAccelerationsOfObjects = calculationOfAccelerations(objects[i], objects[j]);
+            objects[i].accelerationX += newAccelerationsOfObjects.accelerationXFor1Object;
+            objects[i].accelerationY += newAccelerationsOfObjects.accelerationYFor1Object;
+            objects[j].accelerationX += newAccelerationsOfObjects.accelerationXFor2Object;
+            objects[j].accelerationY += newAccelerationsOfObjects.accelerationYFor2Object;
+        }
+    }
+
+    for (size_t i = 0; i < objects.size(); i++)
+    {
+        objects[i].velocityX += objects[i].accelerationX * tick;
+        objects[i].velocityY += objects[i].accelerationY * tick;
+
+        objects[i].x += objects[i].velocityX * tick;
+        objects[i].y += objects[i].velocityY * tick;
+    }
+}
