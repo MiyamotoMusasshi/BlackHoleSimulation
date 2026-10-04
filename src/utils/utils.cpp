@@ -4,27 +4,65 @@
 unsigned int windowWidth = 1920;
 unsigned int windowHeight = 1080;
 
-accelerationsOfObjects calculationOfAccelerations(const Object &object1, const Object &object2)
+accelerationsOfObjects calculationOfAccelerations(Object &object1, Object &object2)
 {
 
-    double deltaX = object2.x - object1.x;
-    double deltaY = object2.y - object1.y;
-    double distance = pow(pow(deltaX, 2) + pow(deltaY, 2), 0.5);
+    if (object1.isAlive != 0 && object2.isAlive != 0)
+    {
+        double deltaX = object2.x - object1.x;
+        double deltaY = object2.y - object1.y;
+        double distance = pow(pow(deltaX, 2) + pow(deltaY, 2), 0.5);
 
-    double force = (object1.mass * object2.mass) / (distance * distance);
+        if (distance <= (object1.size + object2.size) * 2)
+        {
 
-    double acceleration1 = force / object1.mass;
-    double acceleration2 = force / object2.mass;
+            if (object1.isBlackHole == 1 && object2.isBlackHole != 1)
+            {
+                object2.isAlive = 0;
+                object1.size += object2.size;
+                object1.velocityX = 0;
+                object1.velocityY = 0;
+            }
+            if (object2.isBlackHole == 1 && object1.isBlackHole != 1)
+            {
+                object1.isAlive = 0;
+                object2.size += object1.size;
+                object2.velocityX = 0;
+                object2.velocityY = 0;
+            }
+            if (object1.isBlackHole == 0 && object2.isBlackHole == 0)
+            {
+                object1.isAlive = 0;
+                object2.isAlive = 0;
+            }
+            if (object1.isBlackHole == 1 && object2.isBlackHole == 1)
+            {
+                object2.isAlive = 0;
+                object1.size += object2.size;
+                object1.velocityX = 0;
+                object1.velocityY = 0;
+            }
+        }
 
-    double acceleration1X = acceleration1 * (deltaX / distance);
-    double acceleration1Y = acceleration1 * (deltaY / distance);
+        double force = (object1.mass * object2.mass) / (distance * distance);
 
-    double acceleration2X = -acceleration2 * (deltaX / distance);
-    double acceleration2Y = -acceleration2 * (deltaY / distance);
+        double acceleration1 = force / object1.mass;
+        double acceleration2 = force / object2.mass;
 
-    accelerationsOfObjects result = {acceleration1X, acceleration1Y, acceleration2X, acceleration2Y};
+        double acceleration1X = acceleration1 * (deltaX / distance);
+        double acceleration1Y = acceleration1 * (deltaY / distance);
 
-    return result;
+        double acceleration2X = -acceleration2 * (deltaX / distance);
+        double acceleration2Y = -acceleration2 * (deltaY / distance);
+
+        accelerationsOfObjects result = {acceleration1X, acceleration1Y, acceleration2X, acceleration2Y};
+
+        return result;
+    }
+    else
+    {
+        return {0, 0, 0, 0};
+    }
 };
 
 void calculationObjectsPosition(std::vector<Object> &objects, double tick)

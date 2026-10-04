@@ -22,8 +22,9 @@ struct Object
     double velocityX;
     double velocityY;
 
-    double accelerationX;
-    double accelerationY;
+    double accelerationX = 0;
+    double accelerationY = 0;
+    bool isAlive = 1;
 };
 
 struct accelerationsOfObjects
@@ -34,6 +35,6 @@ struct accelerationsOfObjects
     double accelerationYFor2Object;
 };
 
-accelerationsOfObjects calculationOfAccelerations(const Object &object1, const Object &object2);
+accelerationsOfObjects calculationOfAccelerations(Object &object1, Object &object2);
 
 void calculationObjectsPosition(std::vector<Object> &objects, double tick);

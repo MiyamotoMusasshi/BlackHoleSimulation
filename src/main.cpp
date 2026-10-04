@@ -5,8 +5,10 @@
 #include <random>
 #include "simulation-control/simulationControl.h"
 
-double dt = 0.1;
-std::vector<Object> objects = {{"BlackHole", 1, sf::Color::Black, 10000.0, 50.0, (double)windowWidth / 2, (double)windowHeight / 2, 0.0, 0.0, 0.0, 0.0}};
+double dt = 0.05;
+Object object1 = {"Black", 1, sf::Color::Black, 1000000, 100, windowWidth / (double)2, windowHeight / (double)2, 0, 0};
+Object object2 = {"planet", 0, sf::Color::Black, 10, 10, windowWidth / (double)2 + 700, windowHeight / (double)2 + 200, 10, 10};
+std::vector<Object> objects = {object1, object2};
 
 void randomizeColors()
 {
@@ -53,21 +55,23 @@ int main()
                 }
             }
         }
-
         window.clear();
 
         for (size_t i = 0; i < objects.size(); i++)
         {
-            sf::CircleShape objectRender((float)objects[i].size);
-            objectRender.setFillColor(objects[i].color);
-            objectRender.setPosition({sf::Vector2<float>(objects[i].x, objects[i].y)});
-            if (objects[i].isBlackHole == 1)
+            if (objects[i].isAlive != 0)
             {
-                objectRender.setFillColor(sf::Color::Black);
-                objectRender.setOutlineThickness(5.f);
-                objectRender.setOutlineColor(sf::Color::White);
+                sf::CircleShape objectRender((float)objects[i].size);
+                objectRender.setFillColor(objects[i].color);
+                objectRender.setPosition({sf::Vector2<float>(objects[i].x, objects[i].y)});
+                if (objects[i].isBlackHole == 1)
+                {
+                    objectRender.setFillColor(sf::Color::Black);
+                    objectRender.setOutlineThickness(5.f);
+                    objectRender.setOutlineColor(sf::Color::White);
+                }
+                window.draw(objectRender);
             }
-            window.draw(objectRender);
         }
         window.display();
     }

@@ -12,7 +12,7 @@ namespace
 
         for (size_t i = 0; i < objects.size(); i++)
         {
-            std::cout << "[" << i << "] " << objects[i].name << std::endl;
+            std::cout << "[" << i << "] " << objects[i].name << " - " << (objects[i].isAlive == 1 ? "Alive" : "Dead") << std::endl;
             std::cout << "mass = " << objects[i].mass << "; size = " << objects[i].size << std::endl;
             std::cout << "position: " << "(" << objects[i].x - windowWidth / 2 << ", " << objects[i].y - windowHeight / 2 << ")" << std::endl;
             std::cout << "velocity: " << "(" << objects[i].velocityX << ", " << objects[i].velocityY << ")" << std::endl
