@@ -9,7 +9,8 @@ find_package(SFML 3 REQUIRED COMPONENTS Graphics Window System)
 
 add_executable(BlackHole
     src/main.cpp
-    src/utils.cpp
+    src/utils/utils.cpp
+    src/simulation-control/simulationControl.cpp
 )
 
 target_link_libraries(BlackHole PRIVATE

@@ -7,8 +7,14 @@
 },
 {
   "directory": "/home/venator/projects/cpp/simulation/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/BlackHole.dir/src/utils.cpp.o -c /home/venator/projects/cpp/simulation/src/utils.cpp",
-  "file": "/home/venator/projects/cpp/simulation/src/utils.cpp",
-  "output": "CMakeFiles/BlackHole.dir/src/utils.cpp.o"
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o -c /home/venator/projects/cpp/simulation/src/utils/utils.cpp",
+  "file": "/home/venator/projects/cpp/simulation/src/utils/utils.cpp",
+  "output": "CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o"
+},
+{
+  "directory": "/home/venator/projects/cpp/simulation/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o -c /home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp",
+  "file": "/home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp",
+  "output": "CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o"
 }
 ]

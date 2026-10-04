@@ -85,12 +85,12 @@ clean: CMakeFiles/BlackHole.dir/clean
 CMakeFiles/BlackHole.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=1,2,3 "Built target BlackHole"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=1,2,3,4 "Built target BlackHole"
 .PHONY : CMakeFiles/BlackHole.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BlackHole.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/venator/projects/cpp/simulation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/venator/projects/cpp/simulation/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BlackHole.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/venator/projects/cpp/simulation/build/CMakeFiles 0
 .PHONY : CMakeFiles/BlackHole.dir/rule
@@ -102,7 +102,7 @@ BlackHole: CMakeFiles/BlackHole.dir/rule
 # codegen rule for target.
 CMakeFiles/BlackHole.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target BlackHole"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target BlackHole"
 .PHONY : CMakeFiles/BlackHole.dir/codegen
 
 # clean rule for target.

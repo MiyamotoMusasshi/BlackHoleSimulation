@@ -153,29 +153,53 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/utils.o: src/utils.cpp.o
-.PHONY : src/utils.o
+src/simulation-control/simulationControl.o: src/simulation-control/simulationControl.cpp.o
+.PHONY : src/simulation-control/simulationControl.o
 
 # target to build an object file
-src/utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/utils.cpp.o
-.PHONY : src/utils.cpp.o
+src/simulation-control/simulationControl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o
+.PHONY : src/simulation-control/simulationControl.cpp.o
 
-src/utils.i: src/utils.cpp.i
-.PHONY : src/utils.i
+src/simulation-control/simulationControl.i: src/simulation-control/simulationControl.cpp.i
+.PHONY : src/simulation-control/simulationControl.i
 
 # target to preprocess a source file
-src/utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/utils.cpp.i
-.PHONY : src/utils.cpp.i
+src/simulation-control/simulationControl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.i
+.PHONY : src/simulation-control/simulationControl.cpp.i
 
-src/utils.s: src/utils.cpp.s
-.PHONY : src/utils.s
+src/simulation-control/simulationControl.s: src/simulation-control/simulationControl.cpp.s
+.PHONY : src/simulation-control/simulationControl.s
 
 # target to generate assembly for a file
-src/utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/utils.cpp.s
-.PHONY : src/utils.cpp.s
+src/simulation-control/simulationControl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.s
+.PHONY : src/simulation-control/simulationControl.cpp.s
+
+src/utils/utils.o: src/utils/utils.cpp.o
+.PHONY : src/utils/utils.o
+
+# target to build an object file
+src/utils/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o
+.PHONY : src/utils/utils.cpp.o
+
+src/utils/utils.i: src/utils/utils.cpp.i
+.PHONY : src/utils/utils.i
+
+# target to preprocess a source file
+src/utils/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/utils/utils.cpp.i
+.PHONY : src/utils/utils.cpp.i
+
+src/utils/utils.s: src/utils/utils.cpp.s
+.PHONY : src/utils/utils.s
+
+# target to generate assembly for a file
+src/utils/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/utils/utils.cpp.s
+.PHONY : src/utils/utils.cpp.s
 
 # Help Target
 help:
@@ -189,9 +213,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/utils.o"
-	@echo "... src/utils.i"
-	@echo "... src/utils.s"
+	@echo "... src/simulation-control/simulationControl.o"
+	@echo "... src/simulation-control/simulationControl.i"
+	@echo "... src/simulation-control/simulationControl.s"
+	@echo "... src/utils/utils.o"
+	@echo "... src/utils/utils.i"
+	@echo "... src/utils/utils.s"
 .PHONY : help
 
 

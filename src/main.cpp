@@ -1,14 +1,16 @@
 #include <iostream>
-#include "utils.h"
+#include "utils/utils.h"
 #include <SFML/Graphics.hpp>
 #include "vector"
 #include <random>
+#include "simulation-control/simulationControl.h"
 
 double dt = 0.1;
-std::vector<Object> objects = {{"BlackHole", 1, sf::Color::Black, 10000.0, 50.0, (double)windowWidth / 2, (double)windowHeight / 2, 0.0, 0.0, 0.0, 0.0}, {"RandomPlanet", 0, sf::Color::Black, 1.0, 10.0, (double)windowWidth / 2 + 50.0, (double)windowHeight / 2 - 50.0, 10.0, 10.0, 0.0, 0.0}};
+std::vector<Object> objects = {{"BlackHole", 1, sf::Color::Black, 10000.0, 50.0, (double)windowWidth / 2, (double)windowHeight / 2, 0.0, 0.0, 0.0, 0.0}};
 
 int main()
 {
+    simulationControl(objects, dt);
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> distrib(0, 255);
@@ -34,6 +36,15 @@ int main()
         {
             if (event->is<sf::Event::Closed>())
                 window.close();
+
+            // if (event->is<sf::Event::KeyPressed>())
+            // {
+            //     auto key = event->getIf<sf::Event::KeyPressed>()->code;
+
+            //     if (key == sf::Keyboard::Key::Space)
+            //     {
+            //     }
+            // }
         }
 
         window.clear();
@@ -42,7 +53,6 @@ int main()
         {
             sf::CircleShape objectRender((float)objects[i].size);
             objectRender.setFillColor(objects[i].color);
-            // objectRender.setOrigin({{sf::Vector2<float>(objects[i].x, objects[i].y)}});
             objectRender.setPosition({sf::Vector2<float>(objects[i].x, objects[i].y)});
             if (objects[i].isBlackHole == 1)
             {
