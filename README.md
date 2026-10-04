@@ -1,18 +1,18 @@
-#BlackHole Simulation
+# BlackHole Simulation
 
-##About the Project
+## About the Project
 
 A very simple simulation of the interaction between projects in space. This project did not aim to be realistic. With SFMl.
 
-##Installation
+## Installation
 
-###Requirements
+### Requirements
 
 - С++
 - Cmake
 - SFML
 
-###Assembly
+### Assembly
 
 ```bash
 cmake --build build
