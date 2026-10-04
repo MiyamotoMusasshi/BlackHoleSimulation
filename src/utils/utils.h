@@ -25,6 +25,7 @@ struct Object
     double accelerationX;
     double accelerationY;
 };
+
 struct accelerationsOfObjects
 {
     double accelerationXFor1Object;

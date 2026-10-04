@@ -8,9 +8,8 @@
 double dt = 0.1;
 std::vector<Object> objects = {{"BlackHole", 1, sf::Color::Black, 10000.0, 50.0, (double)windowWidth / 2, (double)windowHeight / 2, 0.0, 0.0, 0.0, 0.0}};
 
-int main()
+void randomizeColors()
 {
-    simulationControl(objects, dt);
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> distrib(0, 255);
@@ -20,6 +19,12 @@ int main()
         sf::Color randomColor(distrib(gen), distrib(gen), distrib(gen));
         objects[i].color = randomColor;
     }
+}
+
+int main()
+{
+    simulationControl(objects, dt);
+    randomizeColors();
 
     sf::RenderWindow window(
         sf::VideoMode({windowWidth, windowHeight}),
@@ -37,14 +42,16 @@ int main()
             if (event->is<sf::Event::Closed>())
                 window.close();
 
-            // if (event->is<sf::Event::KeyPressed>())
-            // {
-            //     auto key = event->getIf<sf::Event::KeyPressed>()->code;
+            if (event->is<sf::Event::KeyPressed>())
+            {
+                auto key = event->getIf<sf::Event::KeyPressed>()->code;
 
-            //     if (key == sf::Keyboard::Key::Space)
-            //     {
-            //     }
-            // }
+                if (key == sf::Keyboard::Key::Space)
+                {
+                    simulationControl(objects, dt);
+                    randomizeColors();
+                }
+            }
         }
 
         window.clear();
