@@ -9,6 +9,7 @@ find_package(SFML 3 REQUIRED COMPONENTS Graphics Window System)
 
 add_executable(BlackHole
     src/main.cpp
+    src/save/save.cpp
     src/utils/utils.cpp
     src/simulation-control/simulationControl.cpp
 )
@@ -17,4 +18,8 @@ target_link_libraries(BlackHole PRIVATE
     SFML::Graphics
     SFML::Window
     SFML::System
+)
+
+target_compile_definitions(BlackHole PRIVATE
+    OBJECTS_FILE_PATH="${CMAKE_SOURCE_DIR}/data/objects.json"
 )

@@ -2,6 +2,13 @@
 #include <vector>
 #include "simulationControl.h"
 #include <iostream>
+#include "../save/save.h"
+
+#ifdef OBJECTS_FILE_PATH
+const std::string objectsFilePath = OBJECTS_FILE_PATH;
+#else
+const std::string objectsFilePath = "data/objects.json";
+#endif
 
 namespace
 {
@@ -82,6 +89,7 @@ void simulationControl(std::vector<Object> &objects, double &tick)
         std::cout << "[3] Show Objects" << std::endl;
         std::cout << "[4] Change step simulation" << std::endl;
         std::cout << "[5] Show step simulation" << std::endl;
+        std::cout << "[6] Save data" << std::endl;
         std::cout << "[0] Exit" << std::endl
                   << std::endl;
 
@@ -141,6 +149,15 @@ void simulationControl(std::vector<Object> &objects, double &tick)
             objects.push_back(newObject);
             break;
         }
+        case 6:
+            if (!saveObjects(objects, objectsFilePath))
+            {
+                std::cerr << "Failed to save objects." << std::endl;
+            }
+            else
+            {
+                std::cout << "Objects saved!" << std::endl;
+            }
         }
     }
 }

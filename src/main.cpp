@@ -4,11 +4,16 @@
 #include "vector"
 #include <random>
 #include "simulation-control/simulationControl.h"
+#include "save/save.h"
+
+#ifdef OBJECTS_FILE_PATH
+const std::string objectsFilePath = OBJECTS_FILE_PATH;
+#else
+const std::string objectsFilePath = "data/objects.json";
+#endif
 
 double dt = 0.05;
-Object object1 = {"Black", 1, sf::Color::Black, 1000000, 100, windowWidth / (double)2, windowHeight / (double)2, 0, 0};
-Object object2 = {"planet", 0, sf::Color::Black, 10, 10, windowWidth / (double)2 + 700, windowHeight / (double)2 + 200, 10, 10};
-std::vector<Object> objects = {object1, object2};
+std::vector<Object> objects = {};
 
 void randomizeColors()
 {
@@ -25,6 +30,7 @@ void randomizeColors()
 
 int main()
 {
+    loadObjects(objects, objectsFilePath);
     simulationControl(objects, dt);
     randomizeColors();
 
@@ -42,7 +48,10 @@ int main()
         while (const std::optional event = window.pollEvent())
         {
             if (event->is<sf::Event::Closed>())
+            {
+                saveObjects(objects, objectsFilePath);
                 window.close();
+            }
 
             if (event->is<sf::Event::KeyPressed>())
             {

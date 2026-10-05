@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/save/save.o: src/save/save.cpp.o
+.PHONY : src/save/save.o
+
+# target to build an object file
+src/save/save.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/save/save.cpp.o
+.PHONY : src/save/save.cpp.o
+
+src/save/save.i: src/save/save.cpp.i
+.PHONY : src/save/save.i
+
+# target to preprocess a source file
+src/save/save.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/save/save.cpp.i
+.PHONY : src/save/save.cpp.i
+
+src/save/save.s: src/save/save.cpp.s
+.PHONY : src/save/save.s
+
+# target to generate assembly for a file
+src/save/save.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlackHole.dir/build.make CMakeFiles/BlackHole.dir/src/save/save.cpp.s
+.PHONY : src/save/save.cpp.s
+
 src/simulation-control/simulationControl.o: src/simulation-control/simulationControl.cpp.o
 .PHONY : src/simulation-control/simulationControl.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/save/save.o"
+	@echo "... src/save/save.i"
+	@echo "... src/save/save.s"
 	@echo "... src/simulation-control/simulationControl.o"
 	@echo "... src/simulation-control/simulationControl.i"
 	@echo "... src/simulation-control/simulationControl.s"

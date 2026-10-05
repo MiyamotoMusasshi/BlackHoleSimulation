@@ -1,0 +1,15 @@
+{
+    "objects": [
+        {
+            "isAlive": true,
+            "isBlackHole": true,
+            "mass": 1000000.0,
+            "name": "Black Hole",
+            "size": 75.0,
+            "velocityX": -4.51567274319874e-06,
+            "velocityY": -7.269342198285095e-07,
+            "x": 959.9998073323471,
+            "y": 539.9999809132254
+        }
+    ]
+}

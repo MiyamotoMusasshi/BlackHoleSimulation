@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/venator/projects/cpp/simulation/src/main.cpp" "CMakeFiles/BlackHole.dir/src/main.cpp.o" "gcc" "CMakeFiles/BlackHole.dir/src/main.cpp.o.d"
+  "/home/venator/projects/cpp/simulation/src/save/save.cpp" "CMakeFiles/BlackHole.dir/src/save/save.cpp.o" "gcc" "CMakeFiles/BlackHole.dir/src/save/save.cpp.o.d"
   "/home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp" "CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o" "gcc" "CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o.d"
   "/home/venator/projects/cpp/simulation/src/utils/utils.cpp" "CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o" "gcc" "CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o.d"
   "" "BlackHole" "gcc" "CMakeFiles/BlackHole.dir/link.d"

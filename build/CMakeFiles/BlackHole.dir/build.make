@@ -76,47 +76,62 @@ CMakeFiles/BlackHole.dir/src/main.cpp.o: CMakeFiles/BlackHole.dir/flags.make
 CMakeFiles/BlackHole.dir/src/main.cpp.o: /home/venator/projects/cpp/simulation/src/main.cpp
 CMakeFiles/BlackHole.dir/src/main.cpp.o: CMakeFiles/BlackHole.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BlackHole.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BlackHole.dir/src/main.cpp.o -MF CMakeFiles/BlackHole.dir/src/main.cpp.o.d -o CMakeFiles/BlackHole.dir/src/main.cpp.o -c /home/venator/projects/cpp/simulation/src/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BlackHole.dir/src/main.cpp.o -MF CMakeFiles/BlackHole.dir/src/main.cpp.o.d -o CMakeFiles/BlackHole.dir/src/main.cpp.o -c /home/venator/projects/cpp/simulation/src/main.cpp
 
 CMakeFiles/BlackHole.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlackHole.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/venator/projects/cpp/simulation/src/main.cpp > CMakeFiles/BlackHole.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/venator/projects/cpp/simulation/src/main.cpp > CMakeFiles/BlackHole.dir/src/main.cpp.i
 
 CMakeFiles/BlackHole.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlackHole.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/venator/projects/cpp/simulation/src/main.cpp -o CMakeFiles/BlackHole.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/venator/projects/cpp/simulation/src/main.cpp -o CMakeFiles/BlackHole.dir/src/main.cpp.s
+
+CMakeFiles/BlackHole.dir/src/save/save.cpp.o: CMakeFiles/BlackHole.dir/flags.make
+CMakeFiles/BlackHole.dir/src/save/save.cpp.o: /home/venator/projects/cpp/simulation/src/save/save.cpp
+CMakeFiles/BlackHole.dir/src/save/save.cpp.o: CMakeFiles/BlackHole.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BlackHole.dir/src/save/save.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BlackHole.dir/src/save/save.cpp.o -MF CMakeFiles/BlackHole.dir/src/save/save.cpp.o.d -o CMakeFiles/BlackHole.dir/src/save/save.cpp.o -c /home/venator/projects/cpp/simulation/src/save/save.cpp
+
+CMakeFiles/BlackHole.dir/src/save/save.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlackHole.dir/src/save/save.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/venator/projects/cpp/simulation/src/save/save.cpp > CMakeFiles/BlackHole.dir/src/save/save.cpp.i
+
+CMakeFiles/BlackHole.dir/src/save/save.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlackHole.dir/src/save/save.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/venator/projects/cpp/simulation/src/save/save.cpp -o CMakeFiles/BlackHole.dir/src/save/save.cpp.s
 
 CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o: CMakeFiles/BlackHole.dir/flags.make
 CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o: /home/venator/projects/cpp/simulation/src/utils/utils.cpp
 CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o: CMakeFiles/BlackHole.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o -MF CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o.d -o CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o -c /home/venator/projects/cpp/simulation/src/utils/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o -MF CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o.d -o CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o -c /home/venator/projects/cpp/simulation/src/utils/utils.cpp
 
 CMakeFiles/BlackHole.dir/src/utils/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlackHole.dir/src/utils/utils.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/venator/projects/cpp/simulation/src/utils/utils.cpp > CMakeFiles/BlackHole.dir/src/utils/utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/venator/projects/cpp/simulation/src/utils/utils.cpp > CMakeFiles/BlackHole.dir/src/utils/utils.cpp.i
 
 CMakeFiles/BlackHole.dir/src/utils/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlackHole.dir/src/utils/utils.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/venator/projects/cpp/simulation/src/utils/utils.cpp -o CMakeFiles/BlackHole.dir/src/utils/utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/venator/projects/cpp/simulation/src/utils/utils.cpp -o CMakeFiles/BlackHole.dir/src/utils/utils.cpp.s
 
 CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o: CMakeFiles/BlackHole.dir/flags.make
 CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o: /home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp
 CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o: CMakeFiles/BlackHole.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o -MF CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o.d -o CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o -c /home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o -MF CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o.d -o CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o -c /home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp
 
 CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp > CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp > CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.i
 
 CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp -o CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/venator/projects/cpp/simulation/src/simulation-control/simulationControl.cpp -o CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.s
 
 # Object files for target BlackHole
 BlackHole_OBJECTS = \
 "CMakeFiles/BlackHole.dir/src/main.cpp.o" \
+"CMakeFiles/BlackHole.dir/src/save/save.cpp.o" \
 "CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o" \
 "CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o"
 
@@ -124,6 +139,7 @@ BlackHole_OBJECTS = \
 BlackHole_EXTERNAL_OBJECTS =
 
 BlackHole: CMakeFiles/BlackHole.dir/src/main.cpp.o
+BlackHole: CMakeFiles/BlackHole.dir/src/save/save.cpp.o
 BlackHole: CMakeFiles/BlackHole.dir/src/utils/utils.cpp.o
 BlackHole: CMakeFiles/BlackHole.dir/src/simulation-control/simulationControl.cpp.o
 BlackHole: CMakeFiles/BlackHole.dir/build.make
@@ -132,7 +148,7 @@ BlackHole: /usr/lib/libsfml-graphics.so.3.1.0
 BlackHole: /usr/lib/libsfml-window.so.3.1.0
 BlackHole: /usr/lib/libsfml-system.so.3.1.0
 BlackHole: CMakeFiles/BlackHole.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable BlackHole"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/venator/projects/cpp/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable BlackHole"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BlackHole.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
